@@ -7,6 +7,12 @@ pipeline {
   }
   stages {
     stage('Checkout Code') {
+      agent {
+        node {
+          label 'curriculum-app'
+        }
+
+      }
       steps {
         git(url: 'https://github.com/faraday-academy/curriculum-app', branch: 'dev')
       }
