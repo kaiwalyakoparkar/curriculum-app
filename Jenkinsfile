@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'curriculum app'
+      label 'curriculum-app'
     }
 
   }
