@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'curriculum app'
+    }
+
+  }
   stages {
     stage('Checkout Code') {
       steps {
